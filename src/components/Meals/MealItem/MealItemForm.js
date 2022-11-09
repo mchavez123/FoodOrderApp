@@ -18,8 +18,8 @@ const MealItemForm = (props) => {
       enteredAmountNumber > 5
     ) {
         setAmountIsValid(false);
-      return;
-    }
+      return; //if any condition is true, I want to return and not continue 
+    } //if the conditions are not true, continue to : -->
     props.onAddToCart(enteredAmountNumber);
   };
 
